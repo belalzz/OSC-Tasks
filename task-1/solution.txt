@@ -1,0 +1,17 @@
+osc@osc:~/Desktop$ cd ..
+osc@osc:~$ mkdir Belal
+osc@osc:~$ cd Belal
+osc@osc:~/Belal$ touch one.txt two.txt three.txt four.txt
+osc@osc:~/Belal$ mkdir BAD
+osc@osc:~/Belal$ cd BAD
+osc@osc:~/Belal/BAD$ touch bad.txt
+osc@osc:~/Belal/BAD$ cd ..
+osc@osc:~/Belal$ mv one.txt ~/Downloads
+osc@osc:~/Belal$ cd ~/Downloads
+osc@osc:~/Downloads$ cp one.txt copy.txt
+osc@osc:~/Downloads$ cd ~/Belal
+osc@osc:~/Belal$ nano two.txt
+osc@osc:~/Belal$ echo 1-hello OSC 2-hello OSC 3-hello OSC 4-hello OSC 5-hello OSC 6-hello OSC 7-hello OSC 8-hello OSC >> three.txt
+osc@osc:~/Belal$ mv three.txt hello.txt
+osc@osc:~/Belal$ rm four.txt
+osc@osc:~/Belal$ rm -r BAD
