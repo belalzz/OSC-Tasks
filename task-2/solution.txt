@@ -1,0 +1,24 @@
+osc@osc:~$ git config --global user.name "belalz58"
+osc@osc:~$ git config --global user.email "bkma61@gmail.com"
+osc@osc:~$ git clone https://github.com/belalz58/OSC-Tasks.git
+osc@osc:~$ cd OSC-Tasks/
+osc@osc:~/OSC-Tasks$ mkdir task-2
+osc@osc:~/OSC-Tasks$ cd task-2
+osc@osc:~/OSC-Tasks/task-2$ touch greeting.txt
+osc@osc:~/OSC-Tasks/task-2$ echo "hello world">>greeting.txt
+osc@osc:~/OSC-Tasks/task-2$ cd ..
+osc@osc:~/OSC-Tasks$ git add *
+osc@osc:~/OSC-Tasks$ git commit -m "Added greeting"
+osc@osc:~/OSC-Tasks$ git checkout -b intro
+osc@osc:~/OSC-Tasks$ cd task-2
+osc@osc:~/OSC-Tasks/task-2$ nano greeting.txt 
+osc@osc:~/OSC-Tasks/task-2$ cd ..
+osc@osc:~/OSC-Tasks$ git add *
+osc@osc:~/OSC-Tasks$ git commit -m "Added I love Git"
+osc@osc:~/OSC-Tasks$ git checkout main
+osc@osc:~/OSC-Tasks$ git merge intro
+osc@osc:~/OSC-Tasks$ git tag "v1"
+osc@osc:~/OSC-Tasks$ git push origin main
+osc@osc:~/OSC-Tasks$ cd task-2
+osc@osc:~/OSC-Tasks/task-2$ touch solution.txt
+
